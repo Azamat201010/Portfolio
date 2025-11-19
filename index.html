@@ -1,34 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XojayevCoding Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <div class="divka">
-    <div>
-      <img class="img" src="./ChatGPT Image 26 мая 2025 г., 14_43_03.png" alt="rasm">
-    </div>
-    
+
+<header class="header">
+  <div class="logo">
+    <img src="./ChatGPT Image 26 мая 2025 г., 14_43_03.png" alt="XojayevCoding Logo">
   </div>
-
-  <!-- Content -->
-  <div class="div1"></div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <ul class="ul">
-      <li><a class="li" href="./index.html">Menu</a></li>
-      <li><a class="li" href="./me.html">Me</a></li>
-      <li><a class="li" href="./Project.html">Project</a></li>
-      <li><a class="li" href="./news.html">News</a></li>
-      <li><a class="li" href="./Contact.html">Contact</a></li>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#hero">Bosh sahifa</a></li>
+      <li><a href="#about">Men haqimda</a></li>
+      <li><a href="#skills">Ko‘nikmalar</a></li>
+      <li><a href="#projects">Loyihalar</a></li>
+      <li><a href="#contact">Aloqa</a></li>
     </ul>
-    
-  </footer>
+  </nav>
+</header>
+
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <p>Junior Web Dasturchi | HTML, CSS, JS, React | Telegram Bot Yaratish</p>
+    <a href="#projects" class="btn">Loyihalarni ko‘rish</a>
+  </div>
+  <div class="hero-image">
+    <img src="./salom.jpg" alt="XojayevCoding">
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>Men haqimda</h2>
+
+  <table class="about-table">
+    <tbody>
+      <tr>
+        <td><strong>Ism:</strong></td>
+        <td>Azamat Tursunxajayev Akmalovich</td>
+      </tr>
+      <tr>
+        <td><strong>Yosh:</strong></td>
+        <td>15 yosh</td>
+      </tr>
+      <tr>
+        <td><strong>Shahar:</strong></td>
+        <td>Uzbekistan,
+          Tashkent</td>
+      </tr>
+      <tr>
+        <td><strong>Asosiy texnologiyalar:</strong></td>
+        <td>HTML, CSS, JavaScript, React</td>
+      </tr>
+      <tr>
+        <td><strong>Qo‘shimcha:</strong></td>
+        <td>Telegram botlar yaratish, backend texnologiyalarini o‘rganish</td>
+      </tr>
+      <tr>
+        <td><strong>Yondashuv:</strong></td>
+        <td>Kod minimalistik, toza va optimizatsiyalangan; foydalanuvchi tajribasiga e’tibor</td>
+      </tr>
+      <tr>
+        <td><strong>Maqsad:</strong></td>
+        <td>Kelajakda professional web dasturchi bo‘lish va jahon miqyosida foydali loyihalar yaratish</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+
+<section id="skills" class="section">
+  <h2>Ko‘nikmalar</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <h3>HTML</h3>
+      <div class="skill-bar"><div class="skill-level" data-width="80%"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>CSS</h3>
+      <div class="skill-bar"><div class="skill-level" data-width="70%"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>JavaScript</h3>
+      <div class="skill-bar"><div class="skill-level" data-width="50%"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>React</h3>
+      <div class="skill-bar"><div class="skill-level" data-width="20%"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>Bot</h3>
+      <div class="skill-bar"><div class="skill-level" data-width="60%"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Loyihalar</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Mini Chat App</h3>
+      <p>HTML, CSS va JS bilan oddiy chat ilovasi.</p>
+      <a href="https://ipechat.netlify.app/" target="_blank" class="btn">Ko‘rish</a>
+    </div>
+    <div class="project-card">
+      <h3>Telegram Bot (Demo)</h3>
+      <p>@Xojayev_010_bot – salomlashish, mini hisoblash va qiziqarli funksiyalar.</p>
+      <a href="https://t.me/KhojayevCoding" target="_blank" class="btn">Telegram Demo</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="section">
+  <h2>Aloqa</h2>
+  <p style="text-align:center; color:#ccc;">Email, Telegram yoki Instagram orqali yozishingiz mumkin.</p>
+  <div class="contact-links">
+    <a href="mailto:tursunxajayevazamat@gmail.com" class="btn">Email</a>
+    <a href="https://t.me/KhojayevCoding" target="_blank" class="btn">Telegram</a>
+    <a href="https://instagram.com/azamat010__" target="_blank" class="btn">Instagram (@azamat010__)</a>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <p>&copy; 2025 XojayevCoding. Barcha huquqlar saqlangan.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
