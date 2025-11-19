@@ -7,8 +7,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .about-table {
   width: 100%;
   border-collapse: collapse;
@@ -32,7 +30,6 @@
   color: #ff4500;
   width: 200px;
 }
-
 
 body {
   background: #0f0f0f;
@@ -96,16 +93,19 @@ body {
   width: 100%;
 }
 
+/* Hero Section */
 .hero {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 80px 30px;
 }
 
 .hero-content {
   max-width: 600px;
+  flex: 1 1 300px;
+  margin-bottom: 20px;
   opacity: 0;
   transform: translateY(30px);
   animation: heroTextFade 1s ease forwards;
@@ -115,9 +115,6 @@ body {
   color: #aaa;
   margin-bottom: 20px;
   font-size: 16px;
-  opacity: 0;
-  animation: heroTextFade 1s ease forwards;
-  animation-delay: 0.3s;
 }
 
 .hero-content .btn {
@@ -127,10 +124,19 @@ body {
   animation-delay: 0.6s;
 }
 
+.hero-image {
+  flex: 1 1 300px;
+}
+
 .hero-image img {
-  width: 600px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 12px;
   border: 2px solid #555;
+  object-fit: contain;
   opacity: 0;
   transform: scale(0.9);
   animation: heroImageFade 1s ease forwards;
@@ -261,7 +267,6 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -273,7 +278,6 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -285,7 +289,6 @@ body {
     opacity: 0;
     transform: scale(0.9);
   }
-
   100% {
     opacity: 1;
     transform: scale(1);
@@ -295,12 +298,17 @@ body {
 @media screen and (max-width:768px) {
   .hero {
     flex-direction: column;
-    align-items: center;
+    padding: 40px 15px;
     text-align: center;
   }
 
+  .hero-content {
+    margin-bottom: 20px;
+  }
+
   .hero-image img {
-    margin-top: 20px;
+    max-width: 90%;
+    border-width: 1px;
   }
 
   .nav-list {
@@ -315,7 +323,6 @@ body {
     align-items: center;
   }
 }
-
 
 /* About table responsive */
 @media screen and (max-width: 768px) {
